@@ -3,7 +3,7 @@ name = "SigmaOS-runit"
 tier = 2
 stability = "scaffold"
 language = "rust"
-description = "runit component"
+description = "runit init system compatibility layer with service management, runlevels, dependency resolution, and service supervision"
 upstream = []
 
 [contract]
