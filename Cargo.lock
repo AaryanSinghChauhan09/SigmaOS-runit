@@ -5,3 +5,18 @@ version = 4
 [[package]]
 name = "SigmaOS-runit"
 version = "0.1.0"
+dependencies = [
+ "log",
+ "sigmaos-component-core",
+]
+
+[[package]]
+name = "log"
+version = "0.4.35"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "5d15f86d12da44cd8d4ec3c73984537eb7f4cadcb9776a575a0a8a05ca11005c"
+
+[[package]]
+name = "sigmaos-component-core"
+version = "0.1.0"
+source = "git+https://github.com/AaryanSinghChauhan09/SigmaOS-component-core#2bc35fcc41bb8003d95cbcc27b6eedcfaa12f22b"
