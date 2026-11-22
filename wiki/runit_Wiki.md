@@ -1,18 +1,18 @@
-# SigmaOS-SigmaOS-runit Component Wiki
+# SigmaOS-runit Component Wiki
 
 ## Overview
-SigmaOS-SigmaOS-runit provides runit init system compatibility layer with service management, runlevels, dependency resolution, and service supervision for the SigmaOS operating system. It demonstrates the subsystem and integration within the SigmaOS ecosystem, following the principles of clear abstraction and deterministic initialization.
+SigmaOS-runit provides component for the SigmaOS operating system. It demonstrates the subsystem and integration within the SigmaOS ecosystem, following the principles of clear abstraction and deterministic initialization.
 
 ## Principles
-- Single Responsibility
-- SigmaOS-runit Abstraction
-- Fail-Fast on SigmaOS-runit Initialization Errors
-- Deterministic SigmaOS-runit Setup
-- Clear Abstraction Over SigmaOS-runit APIs
-- Composition over Inheritance for SigmaOS-runit extensions
+- **Single Responsibility**: Each component has a single well-defined purpose
+- **SigmaOS-runit Abstraction**: Clear abstraction over the component's APIs and functionality
+- **Fail-Fast on SigmaOS-runit Initialization Errors**: Fail-fast principle for initialization errors
+- **Deterministic SigmaOS-runit Setup**: Deterministic initialization and configuration
+- **Clear Abstraction Over SigmaOS-runit APIs**: Well-defined, clear APIs
+- **Composition over Inheritance for SigmaOS-runit extensions**: Use composition patterns for extensions
 
 ## Architecture
-SigmaOS-SigmaOS-runit follows a SigmaOS-runit pattern:
+SigmaOS-runit follows a SigmaOS-runit pattern:
 - **SigmaOS-runit Core**: Provides SigmaOS-runit support, SigmaOS-runit management, and SigmaOS-runit tracking
 - **Management**: Supports SigmaOS-runit management, SigmaOS-runit configuration, and SigmaOS-runit lifecycle
 - **Tracking**: Supports SigmaOS-runit status, SigmaOS-runit tracking, and SigmaOS-runit lifecycle
@@ -20,10 +20,10 @@ SigmaOS-SigmaOS-runit follows a SigmaOS-runit pattern:
 
 ## API
 The component provides the following public APIs:
--  - Manage a SigmaOS-runit by given configuration
--  - Register a SigmaOS-runit by given name
--  - Get SigmaOS-runit status and SigmaOS-runit availability
--  - Track SigmaOS-runit management and SigmaOS-runit tracking
+- Manage a SigmaOS-runit by given configuration
+- Register a SigmaOS-runit by given name
+- Get SigmaOS-runit status and SigmaOS-runit availability
+- Track SigmaOS-runit management and SigmaOS-runit tracking
 - Error types for SigmaOS-runit failure scenarios or unsupported SigmaOS-runit types
 
 ## Test Structure (Arrange-Act-ASSERT)
@@ -32,11 +32,8 @@ All tests follow the AAA pattern:
 2. **Act**: Execute the code under test (SigmaOS-runit init, SigmaOS-runit management)
 3. **Assert**: Verify the expected SigmaOS-runit results
 
-Example:
-
-
 ## Development
-- Follows Rust best practices with 
+- Follows best practices with clear abstraction boundaries
 - SigmaOS-runit initialization is best-effort; gracefully degrades on unsupported configurations
 - Comprehensive error types for all SigmaOS-runit failure scenarios
 - Unit tests provided for SigmaOS-runit management and configuration
